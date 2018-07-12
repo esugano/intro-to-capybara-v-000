@@ -1,9 +1,2 @@
 <%# Write your code here! %>
-<h1>Welcome!</h1>
-<h2>If you tell me your name, I can say hi!</h2>
-
-<form action="/greet" method="POST">
-    <label for="form">Name</label>
-    <input type="text" name="user_name" id="user_name" />
-    <input type="submit" />
-</form>
+<h1>Hi <%= params[:user_name] %>, nice to meet you!</h1>
